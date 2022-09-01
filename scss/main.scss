@@ -34,7 +34,7 @@ header{
             li{
                 i{
                     color: #FFCDB2;
-                    font-size: 2vw;
+                    font-size: 3vw;
                 }
             }
             a{
@@ -100,7 +100,7 @@ header{
         grid-area: foto;
         margin: 20px;
         @media (max-width:760px) {
-            width: 60vw;       
+            width: 40vw;       
         }
     }
     &_texto{
@@ -175,6 +175,11 @@ section h2{
         &:hover{
             text-decoration: underline;
         }
+    }
+    &_text{
+        font-size: 1.5vw;
+        margin-top: 30px;
+        text-align: center;
     }
     &_img{
         height: 20vh;

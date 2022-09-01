@@ -24,7 +24,7 @@ header nav ul {
 }
 header nav ul li i {
   color: #FFCDB2;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 header nav ul a {
   text-decoration: none;
@@ -86,7 +86,7 @@ header nav ul a:hover {
 }
 @media (max-width: 760px) {
   .sobremi_imagen {
-    width: 60vw;
+    width: 40vw;
   }
 }
 .sobremi_texto {
@@ -183,6 +183,11 @@ section h2:hover {
 }
 .contserv_titulo:hover {
   text-decoration: underline;
+}
+.contserv_text {
+  font-size: 1.5vw;
+  margin-top: 30px;
+  text-align: center;
 }
 .contserv_img {
   height: 20vh;
