@@ -19,7 +19,8 @@ header nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 5vw;
+  height: 10vw;
+  padding-right: 50px;
   margin-bottom: 0;
 }
 header nav ul li i {
@@ -29,6 +30,7 @@ header nav ul li i {
 header nav ul a {
   text-decoration: none;
   color: white;
+  font-size: 1.5vw;
 }
 header nav ul a:hover {
   color: #B5838D;
@@ -38,34 +40,32 @@ header nav ul a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70px;
+  height: 8vw;
   background-image: url(../img/logo.jpg);
-  background-size: 35vh;
+  background-size: 30vw;
   background-position: right;
   background-repeat: no-repeat;
 }
 
 /*---------INDEX---------*/
-.carousel_img {
-  height: 30vh;
+.carousel {
+  font-size: 3vw;
 }
-@media (max-width: 760px) {
-  .carousel_img {
-    height: 3vh;
-  }
+.carousel_img {
+  height: 30vw;
 }
 .carousel-caption {
   color: #6D6875;
 }
 .carousel-indicators {
-  width: 1vh;
+  width: 1vw;
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .carousel-control-prev {
     width: 1vh;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .carousel-control-next {
     width: 1vh;
   }
@@ -73,35 +73,36 @@ header nav ul a:hover {
 
 .sobremi {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  gap: 20px;
   margin: 40px;
   border: #FFCDB2 solid 1px;
   grid-template-areas: "foto texto";
 }
 .sobremi_imagen {
   grid-area: foto;
-  margin: 20px;
-}
-@media (max-width: 760px) {
-  .sobremi_imagen {
-    width: 40vw;
-  }
+  margin: 10px;
+  width: fit-content;
 }
 .sobremi_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
   grid-area: texto;
-  margin: 20px;
+  margin: 5px;
+  margin-bottom: 10px;
+  width: 47vw;
+}
+.sobremi_texto_texto {
+  font-size: 1vw;
+  text-align: center;
 }
 .sobremi_texto_titulo {
   text-align: center;
 }
-@media (max-width: 760px) {
-  .sobremi_texto {
-    text-align: center;
-  }
-}
-@media (max-width: 760px) {
+@media (max-width: 996px) {
   .sobremi {
     display: flex;
     flex-direction: column;
@@ -112,32 +113,63 @@ header nav ul a:hover {
 
 /*-------HEROSECTION------*/
 section h2 {
-  height: 10vh;
+  height: 7vh;
   background-color: #B5838D;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 4vw;
+  animation-name: cambiacolor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@media (min-width: 791px) {
+  section h2 {
+    height: 20vw;
+  }
 }
 section h2:hover {
   text-decoration: underline;
 }
 
+@keyframes cambiacolor {
+  0% {
+    background-color: #6D6875;
+  }
+  25% {
+    background-color: #B5838D;
+  }
+  50% {
+    background-color: #FFB4A2;
+  }
+  75% {
+    background-color: #FFCDB2;
+  }
+  100% {
+    background-color: white;
+  }
+}
 /*-------SERVICIOS------*/
 .contserv {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 10vh;
-  gap: 20vh;
+  margin: 5vh;
 }
-@media (max-width: 760px) {
+@media (max-width: 400px) {
   .contserv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 60px;
+  }
+}
+@media (min-width: 800px) {
+  .contserv {
+    gap: 70px;
   }
 }
 .contserv_terapia {
@@ -146,17 +178,11 @@ section h2:hover {
   justify-content: center;
   align-items: center;
 }
-.contserv_terapia:hover {
-  transform: scale(1.3);
-}
 .contserv_coach {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.contserv_coach:hover {
-  transform: scale(1.3);
 }
 .contserv_esot {
   display: flex;
@@ -164,52 +190,130 @@ section h2:hover {
   justify-content: center;
   align-items: center;
 }
-.contserv_esot:hover {
-  transform: scale(1.3);
-}
 .contserv_taller {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contserv_taller:hover {
-  transform: scale(1.3);
-}
 .contserv_titulo {
   color: #B5838D;
-  font-size: 4vh;
+  font-size: 3vw;
   text-align: center;
 }
 .contserv_titulo:hover {
   text-decoration: underline;
+  transform: scale(1.1);
 }
 .contserv_text {
+  display: flex;
+  margin-top: 20px;
   font-size: 1.5vw;
-  margin-top: 30px;
+  width: 100px;
   text-align: center;
 }
+@media (min-width: 800px) {
+  .contserv_text {
+    width: 350px;
+  }
+}
 .contserv_img {
-  height: 20vh;
-  width: 20vh;
+  height: 20vw;
+  width: 20vw;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.753);
 }
 .contserv_boton {
   text-decoration: none;
-  margin-top: 20px;
-  border: #6D6875 dotted 4px;
+  border: #6D6875 dotted 1px;
   border-radius: 30px;
+  margin-bottom: 10px;
 }
 .contserv_boton:hover {
   background-color: #6D6875;
-  border: #FFB4A2 dotted 4px;
+  border: #FFB4A2 dotted 1px;
+  transform: scale(1.5);
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .contserv_boton {
+    border: #6D6875 dotted 2px;
+  }
+}
+@media (min-width: 1001px) {
+  .contserv_boton {
+    border: #6D6875 dotted 3px;
+  }
 }
 .contserv_boton_text {
-  margin: 10px;
-  font-size: 2vh;
+  margin: 5px;
+  font-size: 1vw;
   color: #6D6875;
 }
 .contserv_boton_text:hover {
+  color: #FFCDB2;
+}
+
+/*-------POSTS------*/
+.listadoposts1 {
+  margin: 6px;
+  margin-bottom: 15px;
+  margin-left: 3vw;
+  width: 25vw;
+  box-shadow: 1px 1px 10px black;
+  position: fixed;
+  background-color: white;
+}
+.listadoposts {
+  list-style-type: none;
+  padding: 0vh;
+  text-align: center;
+}
+
+section ul li a {
+  text-decoration: none;
+  color: #B5838D;
+  font-size: 1vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contenedorposts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 25vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+section article {
+  box-sizing: border-box;
+  width: 60vw;
+  border: dotted 1px;
+  padding: 10px;
+  margin: 20px;
+}
+section article img {
+  width: 40vw;
+  height: 25vw;
+}
+section article h3 {
+  font-size: 1.5vw;
+  margin-top: 8px;
+}
+section article p {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 0.8vw;
+  text-align: start;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.bi-bookmark-heart-fill {
+  font-size: 2vw;
+  color: #B5838D;
+}
+.bi-bookmark-heart-fill:hover {
   color: #FFCDB2;
 }
 
@@ -219,8 +323,15 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  row-gap: 20px;
-  margin: 100px;
+  row-gap: 3vh;
+  margin: 7vh;
+  font-size: 1vh;
+}
+@media (min-width: 700px) {
+  fieldset {
+    font-size: 2vh;
+    margin: 100px;
+  }
 }
 
 /*-------FOOTER------*/
@@ -229,13 +340,16 @@ footer section ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   height: 10vw;
   margin-bottom: 0px;
 }
+footer section ul a:hover {
+  transform: scale(1.6);
+}
 footer section ul a i {
   color: #FFCDB2;
-  font-size: 5vw;
+  font-size: 2vw;
 }
 footer section ul a i:hover {
   color: #6D6875;
