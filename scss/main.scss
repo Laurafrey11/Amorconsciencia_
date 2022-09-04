@@ -69,6 +69,9 @@ header{
     font-size: 3vw;
     &_img{
     height: 30vw;
+    @media (max-width:768px) {      
+        height: 3vw;
+        }
     }
     &-caption{
         color: #6D6875;
@@ -99,8 +102,10 @@ header{
     "foto texto";
     &_imagen{
         grid-area: foto;
+        justify-items: center;
         margin: 10px;
-        width: fit-content;
+        margin-top: 20px;
+        width: 20vw;
     }
     &_texto{
         display: flex;
@@ -110,9 +115,8 @@ header{
         grid-area: texto;
         margin: 5px;
         margin-bottom: 10px;
-        width: 47vw;
         &_texto{
-            font-size: 1vw;
+            font-size: 1.5vw;
             text-align: center;
         }
         &_titulo{
@@ -271,7 +275,7 @@ section h2{
 section ul li a{
     text-decoration: none;
     color:#B5838D;    
-    font-size: 1vw;
+    font-size: 2vw;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -297,14 +301,14 @@ section article{
         height: 25vw;
     }
     & h3{
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         margin-top: 8px;
 
     }
     & p{
         margin-left: 10vw;
         margin-right: 10vw;
-        font-size: 0.8vw;
+        font-size: 1.3vw;
         text-align: start;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     }
