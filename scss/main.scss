@@ -45,6 +45,7 @@ header{
                 font-size: 1.5vw;
                 &:hover{
                     color: #B5838D;
+                    transition-duration: 2s;
                 }      
                 }
             }
@@ -143,6 +144,7 @@ section h2{
     }
     &:hover{
         text-decoration: underline;
+        transition-duration: 2s;
     }
     animation-name: cambiacolor;
     animation-duration: 10s;
@@ -205,6 +207,7 @@ section h2{
         &:hover{
             text-decoration: underline;
             transform: scale(1.1);
+            transition-duration: 3s;
         }
     }
     &_text{
@@ -232,6 +235,7 @@ section h2{
             background-color: #6D6875;
             border: #FFB4A2 dotted 1px;
             transform: scale(1.5);
+            transition-duration: 3s;
         }
         @media (min-width:800px) and (max-width:1000px){
             border: #6D6875 dotted 2px;
@@ -255,12 +259,14 @@ section h2{
 /*-------POSTS------*/
 
 .listadoposts1{
-    margin: 6px;
-    margin-bottom: 15px;
     margin-left: 3vw;
-    width: 25vw;    
+    width: 27vw;    
     box-shadow: 1px 1px 10px black;
     position: fixed;
+    top: 25vw;
+    height: 20vw;
+    overflow: scroll;
+    margin-bottom: 20vw;
     background-color: white;
     @media (min-width:700px) {
     }
