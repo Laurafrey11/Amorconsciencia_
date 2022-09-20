@@ -264,8 +264,6 @@ section h2{
     box-shadow: 1px 1px 10px black;
     position: fixed;
     top: 25vw;
-    height: 20vw;
-    overflow: scroll;
     margin-bottom: 20vw;
     background-color: white;
     @media (min-width:700px) {
@@ -317,6 +315,13 @@ section article{
         font-size: 1.3vw;
         text-align: start;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+}
+
+.extra{
+    text-align: end;
+    &_titulo{
+        font-size: 1vw;
     }
 }
 

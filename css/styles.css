@@ -269,8 +269,6 @@ section h2:hover {
   box-shadow: 1px 1px 10px black;
   position: fixed;
   top: 25vw;
-  height: 20vw;
-  overflow: scroll;
   margin-bottom: 20vw;
   background-color: white;
 }
@@ -319,6 +317,13 @@ section article p {
   font-size: 1.3vw;
   text-align: start;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.extra {
+  text-align: end;
+}
+.extra_titulo {
+  font-size: 1vw;
 }
 
 .bi-bookmark-heart-fill {
