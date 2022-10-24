@@ -263,15 +263,6 @@ section h2:hover {
 }
 
 /*-------POSTS------*/
-.listadoposts1 {
-  margin-left: 3vw;
-  width: 27vw;
-  box-shadow: 1px 1px 10px black;
-  position: fixed;
-  top: 25vw;
-  margin-bottom: 20vw;
-  background-color: white;
-}
 .listadoposts {
   list-style-type: none;
   padding: 0vh;
@@ -283,6 +274,23 @@ section ul li a {
   color: #B5838D;
   font-size: 2vw;
   font-family: "Times New Roman", Times, serif;
+}
+
+.listadoposts1 {
+  margin-left: 3vw;
+  width: 27vw;
+  height: 20vw;
+  box-shadow: 1px 1px 10px black;
+  position: fixed;
+  top: 25vw;
+  margin-bottom: 20vw;
+  overflow: scroll;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .listadoposts1 {
+    overflow: auto;
+  }
 }
 
 .contenedorposts {
